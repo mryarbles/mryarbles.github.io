@@ -1,6 +1,6 @@
 import * as React from "react";
 
-class AboutPage extends React.Component {
+class The404Page extends React.Component {
 
 	constructor(props, context) {
 		super(props);
@@ -11,7 +11,7 @@ class AboutPage extends React.Component {
 	}
 
 	onEnter() {
-		console.log("HomePage.onEnter");
+
 	}
 
 	componentWillUnmount() {
@@ -20,9 +20,9 @@ class AboutPage extends React.Component {
 
 	render() {
 		return (
-				<div classNane="container">
-					<div className="row flex-items-xs-center">
-						<h1>About</h1>
+				<div className="container">
+					<div className="row">
+						<h1>404</h1>
 					</div>
 				</div>
 		);
@@ -30,4 +30,4 @@ class AboutPage extends React.Component {
 }
 
 
-export default AboutPage;
+export default The404Page;

@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * Dist configuration. Used to build the
  * final output when running npm run dist.
@@ -15,7 +14,7 @@ class WebpackDistConfig extends WebpackBaseConfig {
       cache: false,
       devtool: 'source-map',
       entry: [
-        './client.js'
+        './index.js'
       ],
       plugins: [
         new webpack.DefinePlugin({

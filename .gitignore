@@ -29,8 +29,7 @@ node_modules
 # Bower
 bower_components/
 
-# Dist folder
-dist/
+# Dist folder is allowed because that's where index will read from on github
 
 # IDE/Editor data
 .idea/

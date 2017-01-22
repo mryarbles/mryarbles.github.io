@@ -1,26 +1,25 @@
 import 'babel-polyfill';
-import * as React from "react";
-import {Component} from "react";
+import * as React from 'react';
 import ReactDOM from 'react-dom';
-import {AppContainer} from 'react-hot-loader';
-import{ BrowserRouter, Match, Miss, Link } from 'react-router';
+import { AppContainer } from 'react-hot-loader';
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
+import App from "./components/App";
+import HomePage from "./pages/HomePage";
+import Page from "./pages/Page";
 
-import MainNav from "./components/MainNav";
+
+require('./sass/styles.scss');
+
+const rootElement = document.getElementById('app');
 
 const jsx =
-			<AppContainer>
-				<BrowserRouter>
-						<div className="site">
-							<MainNav></MainNav>
-							<div id="PageContainer">
-								<div className="site-overlay"></div>
-								<Match exactly pattern="/" component={HomePage} />
-								<Miss component={ The404Page } />
-								<footer className="main-footer"></footer>
-							</div>
-						</div>
-				</BrowserRouter>
-			</AppContainer>;
+				<Router hashType="hashbang" history={ hashHistory }>
+								<Route path="/" component={App}>
+									<IndexRoute component={HomePage}/>
+									<Route path="/page/:id/:count" component={ Page } />
+								</Route>
+				</Router>
+		;
 
 
 ReactDOM.render(jsx, rootElement);

@@ -1,5 +1,7 @@
 'use strict';  // eslint-disable-line
 
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 /**
  * Webpack configuration base class
  */
@@ -92,7 +94,7 @@ class WebpackBaseConfig {
         rules: [
           {
             enforce: 'pre',
-            test: /\.jsx?$/,
+            test: /\.js?$/,
             include: this.srcPathAbsolute,
             loader: 'babel-loader',
             query: {
@@ -119,22 +121,6 @@ class WebpackBaseConfig {
             ]
           },
           {
-            test: /^.((?!cssmodule).)*\.less$/,
-            loaders: [
-              { loader: 'style-loader' },
-              { loader: 'css-loader' },
-              { loader: 'less-loader' }
-            ]
-          },
-          {
-            test: /^.((?!cssmodule).)*\.styl$/,
-            loaders: [
-              { loader: 'style-loader' },
-              { loader: 'css-loader' },
-              { loader: 'stylus-loader' }
-            ]
-          },
-          {
             test: /\.json$/,
             loader: 'json-loader'
           },
@@ -147,20 +133,15 @@ class WebpackBaseConfig {
             loaders: [
               // Note: Moved this to .babelrc
               { loader: 'react-hot-loader' },
-              { loader: 'babel-loader' },
-              { loader: 'jsx-loader' }
+              { loader: 'babel-loader' }
             ]
           },
           {
             test: /\.cssmodule\.(sass|scss)$/,
-            loaders: [
-              { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              },
-              { loader: 'sass-loader' }
-            ]
+            // sassLoader will include node_modules explicitly.
+			      // we extract the styles into their own .css file instead of having
+			      // them inside the js.
+			      loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
           },
           {
             test: /\.cssmodule\.css$/,
@@ -171,28 +152,6 @@ class WebpackBaseConfig {
                 query: cssModulesQuery
               }
             ]
-          },
-          {
-            test: /\.cssmodule\.less$/,
-            loaders: [
-              { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              },
-              { loader: 'less-loader' }
-            ]
-          },
-          {
-            test: /\.cssmodule\.styl$/,
-            loaders: [
-              { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              },
-              { loader: 'stylus-loader' }
-            ]
           }
         ]
       },
@@ -201,7 +160,9 @@ class WebpackBaseConfig {
         filename: 'app.js',
         publicPath: './assets/'
       },
-      plugins: [],
+      plugins: [
+        new ExtractTextPlugin('css/[name].css')
+      ],
       resolve: {
         alias: {
           actions: `${this.srcPathAbsolute}/actions/`,

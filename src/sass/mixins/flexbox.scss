@@ -1,0 +1,39 @@
+@mixin flex-row($wrap: wrap){
+	display: flex;
+	flex-flow: row $wrap;
+}
+
+
+@mixin flex-col($wrap: wrap) {
+	display: flex;
+	flex-flow: column $wrap;
+}
+
+@mixin flex-align($align) {
+	align-items: $align;
+}
+
+.flex-row {
+	@include flex-row(nowrap);
+}
+
+.flex-col {
+	@include flex-col(nowrap);
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.flex-center {
+	justify-content: center;
+}
+
+.flex-space-between {
+	justify-content: space-between;
+}
+
+.flex-space-around {
+	justify-content: space-around;
+}
+

@@ -1,0 +1,36 @@
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+/*
+
+Color Scheme
+
+*/
+$color-green:             #98ca3c;
+$color-red:               #ff230c;
+$color-dark-blue:         #3f5765;
+$color-light-gray:        #e1e1e1;
+$color-dark-gray:         darken($color-light-gray, 10%);
+$color-black:             #000;
+$color-white:             #fff;
+
+
+$color-bg-twitter:        #1c1c1c;
+$color-bg-info:           tan;
+$color-bg-footer:         #1c1c1c;
+
+$color-alert-yellow:      #ebe16f;
+$color-alert-red:         #fbe3e4;
+$color-alert-green:       $color-green;
+$color-success:       		$color-green;
+$color-alert-blue:        #d5edf8;
+
+$color-link-color:        $color-red;
+$color-link-hover:        darken($color-link-color, 9%);
+
+$color-facebook:          #3b5998;
+$color-twitter:           #448ccb;
+$color-google:            #dd4b39;

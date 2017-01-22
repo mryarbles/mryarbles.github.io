@@ -1,0 +1,44 @@
+// BORDER-BOX ALL THE THINGS! (http://paulirish.com/2012/box-sizing-border-box-ftw/)
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+@mixin standard-block($position:relative,$overflow:hidden, $margin:0, $padding:0) {
+	display:block;
+	overflow:$overflow;
+	position:$position;
+	margin: $margin;
+	padding: $padding;
+}
+
+
+
+@mixin centered-block($width){
+	@include standard-block();
+	margin:0 auto;
+	width:$width;
+}
+
+@mixin absolute-center {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+@mixin overflow-visible {
+	overflow:visible;
+}
+
+@mixin allow-overflow {
+	overflow:visible;
+}
+
+.full-width {
+	width:100% !important;
+}
+
+.absolute-center {
+	@include absolute-center();
+}

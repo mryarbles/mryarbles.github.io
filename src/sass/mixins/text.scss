@@ -1,0 +1,16 @@
+/*
+use the best ampersand
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+  font-style: italic;
+}
+
+
+
+
+@mixin em($value: $font-size-base, $context: $font-size-base){
+  font-size: ($value/$context)em;
+}

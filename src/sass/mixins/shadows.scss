@@ -1,0 +1,22 @@
+/*********************
+BOX SHADOW
+*********************/
+
+/* .boxShadow(0,0,4px,0,#444); */
+@mixin box-shadow($x: 0, $y: 0, $radius: 4px, $spread: 0, $color: rgba(0,0,0,0.5)){
+  @if(type-of($x) == number){
+    -webkit-box-shadow: $x $y $radius $spread $color;
+    -moz-box-shadow: $x $y $radius $spread $color;
+    box-shadow: $x $y $radius $spread $color;
+  } @else {
+    -webkit-box-shadow: $x;
+    -moz-box-shadow: $x;
+    box-shadow: $x;
+  }
+
+}
+
+
+@mixin text-shadow($color:inherit, $w: 2px, $h:2px, $blur: 2px){
+  text-shadow: $h $w $blur $color;
+}

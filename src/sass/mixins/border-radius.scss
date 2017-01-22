@@ -1,0 +1,17 @@
+/*********************
+BORDER RADIUS
+*********************/
+
+/*
+NOTE: For older browser support (and some mobile),
+don't use the shorthand to define *different* corners.
+
+USAGE: .border-radius(4px);
+
+*/
+@mixin border-radius($radius: 5px, $moz: true, $webkit: true, $ms: true) {
+  @if $moz    { -moz-border-radius:    $radius; }
+  @if $webkit { -webkit-border-radius: $radius; }
+  @if $ms     { -ms-border-radius:     $radius; }
+  border-radius: $radius;
+}

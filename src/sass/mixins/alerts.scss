@@ -1,0 +1,30 @@
+// alerts and notices
+@mixin alert() {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+
+.alert-help {
+  @include alert();
+  border-color: darken($color-alert-yellow, 5%);
+  background: $color-alert-yellow;
+}
+
+.alert-info {
+  @include alert();
+  border-color: darken($color-alert-blue, 5%);
+  background: $color-alert-blue;
+}
+
+.alert-error {
+  @include alert();
+  border-color: darken($color-alert-red, 5%);
+  background: $color-alert-red;
+}
+
+.alert-success {
+  @include alert();
+  border-color: darken($color-alert-green, 5%);
+  background: $color-alert-green;
+}

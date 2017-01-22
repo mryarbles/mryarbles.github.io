@@ -1,0 +1,9 @@
+{
+  "generator-react-webpack": {
+    "appName": "mryarbles-github-io",
+    "style": "scss",
+    "cssmodules": true,
+    "postcss": true,
+    "generatedWithVersion": 4
+  }
+}

@@ -12,13 +12,19 @@ class Page extends React.Component {
 	}
 
 	componentDidMount() {
-		console.log("componentDidMount")
+		console.log("componentDidMount");
 
+	}
+
+	componentWillUpdate() {
+		console.log("component will update");
+		$("#MenuButton").click();
 	}
 
 	componentDidUpdate(prevProps, prevState) {
 		console.log("componentDidUpdate", prevProps);
-		$("img").unveil();
+		$(".page img").unveil();
+		//$("#MenuButton").trigger("click");
 	}
 
 	render() {
@@ -40,11 +46,11 @@ class Page extends React.Component {
 
 		return (
 				<div className="page">
-					<div className="expanded column row page-info">
+					<div className="expanded column page-info">
 						<h1>{ copyData.title }</h1>
 						{ copyData.text }
 					</div>
-					<div className="expanded column row">
+					<div className="expanded column">
 						{ list }
 					</div>
 				</div>

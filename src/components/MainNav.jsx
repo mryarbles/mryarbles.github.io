@@ -23,7 +23,7 @@ class MainNav extends React.Component {
 						<Link to="/"><h1>mryarbles.com</h1></Link>
 					</div>
 					<div className="top-bar-right">
-						<button type="button" className="button menu-btn" data-toggle="mainMenu">
+						<button id="MenuButton" type="button" className="button menu-btn" data-toggle="mainMenu">
 							<i></i>
 							<i></i>
 							<i></i>

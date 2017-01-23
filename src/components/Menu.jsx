@@ -11,16 +11,20 @@ class Menu extends React.Component {
 		console.log("MainNav will re-render, since the todo has changed!");
 	}
 
+	onLink() {
+
+	}
 
 	render() {
 
 
 		return (
 				<div className="menu-wrapper">
+
 					<div className="row column">
 						<ul className="simple">
 							<li>
-								<Link to="/page/assetavenue/11">
+								<Link to="/page/assetavenue/11"  data-toggle="mainMenu">
 									<img className="thumbnail" src="static/img/assetavenue/tn.png" />
 								</Link>
 							</li>

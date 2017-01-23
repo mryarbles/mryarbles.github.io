@@ -24,7 +24,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-				<div data-sticky-container>
+				<div>
 					<MainNav></MainNav>
 					<div className="site off-canvas-wrapper">
 						<div className="off-canvas position-left" id="mainMenu" data-off-canvas>

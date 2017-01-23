@@ -1,5 +1,9 @@
 import * as React from "react";
 const copy = {
+	assetavenue: {
+		title: 'AssetAvenue.com',
+		text: <p>AssetAvenue’s newly hired CTO hired me in his drive to completely overhaul a struggling tech team, whose technology was in a state of complete disarray. With this entirely new team, completed a product redesign and rewrite, and to launch a product within three months, a task that the previous team had failed to fulfill in almost two years. We then built out a complete mortgage origination system for three separate products, that allowed the approval and services of loan in as little as 10 days. Our final initiative, that started last summer, was to build an underwriting system to alleviate a lot of complexities in that process. After working primary in marketing, on projects with limited shelf lives it has been a remarkably rewarding and challenging task, working on a product in an Agile environment that is constantly in flux.</p>
+	},
 	intranet: {
 		title: 'SSLA Intranet',
 		text: <p>I built SSLA an intranet system using Symfony 2 framework, and angular</p>

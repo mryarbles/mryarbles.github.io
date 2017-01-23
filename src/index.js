@@ -6,6 +6,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import App from "./components/App";
 import HomePage from "./pages/HomePage";
 import Page from "./pages/Page";
+import NogpongPage from "./pages/NogpongPage";
 
 
 require('./sass/styles.scss');
@@ -17,6 +18,7 @@ const jsx =
 								<Route path="/" component={App}>
 									<IndexRoute component={HomePage}/>
 									<Route path="page/:id/:count" component={ Page } />
+									<Route path="nogpong/:id/:count" component={ NogpongPage } />
 								</Route>
 				</Router>
 		;

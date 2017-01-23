@@ -5,7 +5,7 @@ import copy from "../copy";
 
 const $ = window["jQuery"];
 
-class Page extends React.Component {
+class NogpongPage extends React.Component {
 
 	constructor(props, context) {
 		super(props);
@@ -22,8 +22,6 @@ class Page extends React.Component {
 	}
 
 	render() {
-
-		console.log("Page.render");
 
 		let urls = [];
 
@@ -44,7 +42,17 @@ class Page extends React.Component {
 						<h1>{ copyData.title }</h1>
 						{ copyData.text }
 					</div>
-					<div className="expanded column row">
+					<div className="expanded column row align-center">
+						<div className="video-holder">
+							<iframe width="840" height="473" src="https://www.youtube.com/embed/G-dejeqJ32o" frameBorder="0" ></iframe>
+						</div>
+					</div>
+					<div className="expanded column row align-center">
+						<div className="video-holder">
+							<iframe  width="840" height="473"  src="https://www.youtube.com/embed/encTMbYt6PQ" frameBorder="0" ></iframe>
+						</div>
+					</div>
+					<div className="expanded column row align-center">
 						{ list }
 					</div>
 				</div>
@@ -53,4 +61,4 @@ class Page extends React.Component {
 }
 
 
-export default Page;
+export default NogpongPage;

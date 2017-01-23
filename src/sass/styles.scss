@@ -6,6 +6,10 @@ body {
 	background: #999999;
 }
 
+html, body {
+	min-height: 100%;
+}
+
 h1 {
 	font-family: 'Bree Serif', serif;
 	font-size: 2rem;
@@ -35,7 +39,8 @@ ul.simple {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 980px;
+		max-width: 100%;
+		height: auto;
 	}
 }
 
@@ -50,10 +55,11 @@ ul.simple {
 }
 
 .page-info {
-	background: rgba(255,255,255,.25);
+	background: $color-blue;
 	padding: 100px;
 
 	h1 {
+		color: white;
 		font-weight: bold;
 		font-size: 3rem;
 		display: block;
@@ -62,10 +68,22 @@ ul.simple {
 	}
 
 	p {
+		color: white;
 		display:block;
 		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
 		text-align:center;
 	}
+}
+
+.video-holder {
+	display: block;
+	width: 840px;
+	position: relative;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }

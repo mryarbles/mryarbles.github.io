@@ -20,12 +20,17 @@ class Menu extends React.Component {
 					<div className="row column">
 						<ul className="simple">
 							<li>
+								<Link to="/page/assetavenue/11">
+									<img className="thumbnail" src="static/img/assetavenue/tn.png" />
+								</Link>
+							</li>
+							<li>
 								<Link to="/page/intranet/5">
 									<img className="thumbnail" src="static/img/intranet/tn.png" />
 								</Link>
 							</li>
 							<li>
-								<Link to="/page/nogpong/2">
+								<Link to="/nogpong/nogpong/2">
 									<img className="thumbnail" src="static/img/nogpong/tn.png" />
 								</Link>
 							</li>

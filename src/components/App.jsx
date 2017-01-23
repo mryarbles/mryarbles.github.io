@@ -24,14 +24,16 @@ class App extends React.Component {
 
 	render() {
 		return (
-				<div className="site off-canvas-wrapper">
-					<div className="off-canvas position-left" id="mainMenu" data-off-canvas>
-						<Menu />
-					</div>
-					<div className="off-canvas-content" data-off-canvas-content>
-						<MainNav></MainNav>
-						<div id="PageContainer">
-							{ this.props.children }
+				<div data-sticky-container>
+					<MainNav></MainNav>
+					<div className="site off-canvas-wrapper">
+						<div className="off-canvas position-left" id="mainMenu" data-off-canvas>
+							<Menu />
+						</div>
+						<div className="off-canvas-content" data-off-canvas-content>
+							<div id="PageContainer">
+								{ this.props.children }
+							</div>
 						</div>
 					</div>
 				</div>

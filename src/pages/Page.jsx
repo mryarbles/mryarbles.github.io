@@ -1,6 +1,8 @@
 import * as React from "react";
 import Photo from "../components/Photo";
 
+import copy from "../copy";
+
 const $ = window["jQuery"];
 
 class Page extends React.Component {
@@ -29,16 +31,22 @@ class Page extends React.Component {
 			urls.push(`/static/img/${ this.props.params.id }/${ i }.png`);
 		}
 
+		let copyData = copy[this.props.params.id];
+
 		let list = urls.map((url, key) => {
 			//return <img src='static/img/bg.png' key={ key } data-src={ url } />
 			return <Photo key={ key } url={ url } />;
 		});
 
-		console.log(list);
-
 		return (
-				<div className="column row">
-					{ list }
+				<div class="page">
+					<div className="expanded column row page-info">
+						<h1>{ copyData.title }</h1>
+						{ copyData.text }
+					</div>
+					<div className="expanded column row">
+						{ list }
+					</div>
 				</div>
 		);
 	}

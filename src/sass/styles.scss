@@ -1,6 +1,20 @@
 @import "vars/_module";
 @import "mixins/_module";
 
+body {
+	font-family: 'Bree Serif', serif;
+	background: #999999;
+}
+
+h1 {
+	font-family: 'Bree Serif', serif;
+	font-size: 2rem;
+}
+
+p {
+	font-family: 'Bree Serif', serif;
+}
+
 .menu-wrapper {
 	padding-top: 1rem;
 }
@@ -9,4 +23,49 @@ ul.simple {
 	list-style: none;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.top-bar.is-stuck {
+	width: 100%;
+}
+
+#PageContainer {
+	img {
+		margin: 1em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 980px;
+	}
+}
+
+.menu-btn {
+	i {
+		display: block;
+		width: 30px;
+		height: 4px;
+		margin-bottom: 3px;
+		background: white;
+	}
+}
+
+.page-info {
+	background: rgba(255,255,255,.25);
+	padding: 100px;
+
+	h1 {
+		font-weight: bold;
+		font-size: 3rem;
+		display: block;
+		width: 100%;
+		text-align:center;
+	}
+
+	p {
+		display:block;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+	}
 }

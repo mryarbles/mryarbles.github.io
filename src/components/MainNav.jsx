@@ -17,16 +17,19 @@ class MainNav extends React.Component {
 
 		return (
 
-			<div data-sticky-container>
+
 				<nav className="top-bar" data-sticky data-options="marginTop:0;">
 					<div className="top-bar-left">
 						<h1>mryarbles.com</h1>
 					</div>
 					<div className="top-bar-right">
-						<button type="button" className="button" data-toggle="mainMenu">Open Menu</button>
+						<button type="button" className="button menu-btn" data-toggle="mainMenu">
+							<i></i>
+							<i></i>
+							<i></i>
+						</button>
 					</div>
 				</nav>
-			</div>
 
 		);
 	}

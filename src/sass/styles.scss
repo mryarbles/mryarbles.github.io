@@ -20,6 +20,7 @@ p {
 }
 
 .menu-wrapper {
+	height: 80px;
 	padding-top: 1rem;
 }
 
@@ -45,6 +46,11 @@ ul.simple {
 }
 
 .menu-btn {
+	position: fixed;
+	top: .85rem;
+	right: 1rem;
+	padding: .5em;
+	z-index: 10000;
 	i {
 		display: block;
 		width: 30px;

@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import { Link } from 'react-router'
 
 class MainNav extends React.Component {
 
@@ -18,9 +18,9 @@ class MainNav extends React.Component {
 		return (
 
 
-				<nav className="top-bar" data-sticky data-options="marginTop:0;">
+				<nav className="top-bar">
 					<div className="top-bar-left">
-						<h1>mryarbles.com</h1>
+						<Link to="/"><h1>mryarbles.com</h1></Link>
 					</div>
 					<div className="top-bar-right">
 						<button type="button" className="button menu-btn" data-toggle="mainMenu">

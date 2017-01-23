@@ -30,6 +30,11 @@ class Menu extends React.Component {
 								</Link>
 							</li>
 							<li>
+								<Link to="/page/amanda/4">
+									<img className="thumbnail" src="static/img/amanda/tn.png" />
+								</Link>
+							</li>
+							<li>
 								<Link to="/nogpong/nogpong/2">
 									<img className="thumbnail" src="static/img/nogpong/tn.png" />
 								</Link>
@@ -47,6 +52,16 @@ class Menu extends React.Component {
 							<li>
 								<Link to="/page/ringblender/3">
 									<img className="thumbnail" src="static/img/ringblender/tn.png" />
+								</Link>
+							</li>
+							<li>
+								<Link to="/page/sxsw/1">
+									<img className="thumbnail" src="static/img/sxsw/tn.png" />
+								</Link>
+							</li>
+							<li>
+								<Link to="/page/searchauto/7">
+									<img className="thumbnail" src="static/img/searchauto/tn.png" />
 								</Link>
 							</li>
 						</ul>

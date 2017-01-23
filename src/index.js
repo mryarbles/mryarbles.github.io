@@ -16,7 +16,7 @@ const jsx =
 				<Router hashType="hashbang" history={ hashHistory }>
 								<Route path="/" component={App}>
 									<IndexRoute component={HomePage}/>
-									<Route path="/page/:id/:count" component={ Page } />
+									<Route path="page/:id/:count" component={ Page } />
 								</Route>
 				</Router>
 		;

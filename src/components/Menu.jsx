@@ -16,7 +16,7 @@ class Menu extends React.Component {
 
 
 		return (
-				<div class="menu-wrapper">
+				<div className="menu-wrapper">
 					<div className="row column">
 						<ul className="simple">
 							<li>

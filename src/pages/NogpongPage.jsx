@@ -38,21 +38,28 @@ class NogpongPage extends React.Component {
 
 		return (
 				<div className="page">
-					<div className="expanded column page-info">
-						<h1>{ copyData.title }</h1>
-						{ copyData.text }
+					<div className="show-for-large">
+						<div className="expanded column page-info">
+							<h1>{ copyData.title }</h1>
+							{ copyData.text }
+						</div>
+						<div className="expanded column align-center">
+							<div className="video-holder">
+								<iframe width="840" height="473" src="https://www.youtube.com/embed/G-dejeqJ32o" frameBorder="0" ></iframe>
+							</div>
+						</div>
+						<div className="expanded column">
+							<div className="video-holder">
+								<iframe  width="840" height="473"  src="https://www.youtube.com/embed/encTMbYt6PQ" frameBorder="0" ></iframe>
+							</div>
+						</div>
+						<div className="expanded column">
+							<div className="video-holder">
+								<iframe width="840" height="473" src="https://www.youtube.com/embed/S2i_oOWJXPo" frameborder="0"></iframe>
+							</div>
+						</div>
 					</div>
 					<div className="expanded column align-center">
-						<div className="video-holder">
-							<iframe width="840" height="473" src="https://www.youtube.com/embed/G-dejeqJ32o" frameBorder="0" ></iframe>
-						</div>
-					</div>
-					<div className="expanded column">
-						<div className="video-holder">
-							<iframe  width="840" height="473"  src="https://www.youtube.com/embed/encTMbYt6PQ" frameBorder="0" ></iframe>
-						</div>
-					</div>
-					<div className="expanded column row align-center">
 						{ list }
 					</div>
 				</div>

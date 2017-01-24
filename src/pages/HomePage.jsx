@@ -40,7 +40,7 @@ class HomePage extends React.Component {
 
 					</div>
 					<div className="row align-spaced">
-						<Link to="/nogpong/nogpong/2">
+						<Link to="/nogpong/nogpong/9">
 							<img className="thumbnail" src="static/img/nogpong/tn-lg.png" />
 						</Link>
 

@@ -22,7 +22,7 @@ const copy = {
 	},
 	nogpong: {
 		title: "Nogpong!",
-		text: <span><p>The designer assigned to this year's holiday promotional project really wanted to do something with robots. Unfortunately, that's about where his creativity ended.  After spinning wheels for weeks, I thought of playing beer pong with an internet controlled robot in the shower one morning. When the producer on the project suggested Eggnog instead of beer, Nogpong! was born.</p><p>Hello</p></span>
+		text: <span><p>The designer assigned to this year's holiday promotional project really wanted to do something with robots. Unfortunately, that's about where his creativity ended.  After spinning wheels for weeks, I thought of playing beer pong with an internet controlled robot in the shower one morning. When the producer on the project suggested Eggnog instead of beer, Nogpong! was born.</p><p>We wound up having three separate Nogpong! events.</p></span>
 	},
 	ringblender: {
 		title: "Ringblender.com",

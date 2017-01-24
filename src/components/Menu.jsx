@@ -39,7 +39,7 @@ class Menu extends React.Component {
 								</Link>
 							</li>
 							<li>
-								<Link to="/nogpong/nogpong/2">
+								<Link to="/nogpong/nogpong/9">
 									<img className="thumbnail" src="static/img/nogpong/tn.png" />
 								</Link>
 							</li>

@@ -1,8 +1,10 @@
 @import "vars/_module";
 @import "mixins/_module";
 
+$font-family: 'Sintony', sans-serif;
+
 body {
-	font-family: 'Bree Serif', serif;
+	font-family: 'Sintony', sans-serif;
 	background: #999999;
 }
 
@@ -10,13 +12,12 @@ html, body {
 	min-height: 100%;
 }
 
-h1 {
-	font-family: 'Bree Serif', serif;
-	font-size: 2rem;
+h1, h2, h3, h4, h5, h6, p, span {
+	font-family: inherit;
 }
 
-p {
-	font-family: 'Bree Serif', serif;
+h1 {
+	font-size: 2rem;
 }
 
 .menu-wrapper {

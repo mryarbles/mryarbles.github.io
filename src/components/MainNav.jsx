@@ -24,10 +24,11 @@ class MainNav extends React.Component {
 
 		return (
 
-				<div class="fixed">
+				<div className="fixed">
 					<nav className="top-bar" id="mainNav">
 						<div className="top-bar-left">
-							<Link to="/"><h1>mryarbles.com</h1></Link>
+							<Link to="/"><h1 className="main-title">mryarbles.com</h1></Link>
+							<a href="https://www.linkedin.com/in/lukegrannis/" target="_blank" className="linkedin"><img src="static/img/In-2C-28px-TM.png" /></a>
 						</div>
 						<div className="top-bar-right">
 							<button id="menuButton" type="button" className="button menu-btn" data-toggle="mainMenu">

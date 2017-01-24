@@ -16,8 +16,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-family: inherit;
 }
 
-h1 {
+h1.main-title {
+	display: inline-block;
 	font-size: 2rem;
+	margin-right: 2rem;
 }
 
 .menu-wrapper {
@@ -104,4 +106,9 @@ body.peekaboo-is-open {
 		@include anim();
 		top: 80px;
 	}
+}
+
+.linkedin {
+	position: relative;
+	top: -4px;
 }

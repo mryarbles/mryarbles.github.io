@@ -26,13 +26,13 @@ class App extends React.Component {
 		return (
 				<div>
 					<MainNav></MainNav>
-					<div className="site off-canvas-wrapper">
-						<div className="off-canvas position-left" id="mainMenu" data-off-canvas>
-							<Menu />
-						</div>
-						<div className="off-canvas-content" data-off-canvas-content>
-							<div id="PageContainer">
-								{ this.props.children }
+					<div class="off-canvas-wrapper">
+						<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+							<div className="off-canvas position-left" id="mainMenu" data-off-canvas>
+								<Menu />
+							</div>
+							<div className="off-canvas-content" data-off-canvas-content>
+								<div id="PageContainer">{ this.props.children }</div>
 							</div>
 						</div>
 					</div>
@@ -43,3 +43,19 @@ class App extends React.Component {
 
 
 export default App;
+
+/*
+ <div>
+ <MainNav></MainNav>
+ <div className="site off-canvas-wrapper">
+ <div className="off-canvas position-left" id="mainMenu" data-off-canvas>
+ <Menu />
+ </div>
+ <div className="off-canvas-content" data-off-canvas-content>
+ <div id="PageContainer">
+ { this.props.children }
+ </div>
+ </div>
+ </div>
+ </div>
+ */

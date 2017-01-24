@@ -10,7 +10,7 @@ class Photo extends React.Component {
 	render() {
 
 		return (
-				<img src='static/img/bg.png' data-src={ this.props.url } />
+				<img src={ this.props.url } />
 		);
 	}
 }

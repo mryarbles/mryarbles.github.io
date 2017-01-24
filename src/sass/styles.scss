@@ -93,3 +93,14 @@ ul.simple {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
+.off-canvas-wrapper {
+	padding-top: 80px;
+}
+
+body.peekaboo-is-open {
+	#mainMenu {
+		@include anim();
+		top: 80px;
+	}
+}

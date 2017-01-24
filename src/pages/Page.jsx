@@ -13,18 +13,17 @@ class Page extends React.Component {
 
 	componentDidMount() {
 		console.log("componentDidMount");
-
 	}
 
 	componentWillUpdate() {
 		console.log("component will update");
-		$("#MenuButton").click();
+
 	}
 
 	componentDidUpdate(prevProps, prevState) {
 		console.log("componentDidUpdate", prevProps);
-		$(".page img").unveil();
-		//$("#MenuButton").trigger("click");
+		//$(".page img").unveil();
+		$("#mainMenu").removeClass("is-open");
 	}
 
 	render() {

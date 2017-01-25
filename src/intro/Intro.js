@@ -6,7 +6,6 @@ define(["mryarbles","./Logo","./Background","jquery"],function(mry,Logo,Backgrou
 
     var Intro = function(settings,$containerElId){
 
-        Debug.send("[Intro]");
 
         this.settings = settings;
 

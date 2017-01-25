@@ -14,10 +14,6 @@ var Background = function (settings) {
 
 	this.colors = settings.colors;
     this.settings = settings;
-
-    Debug.send("[Background]");
-    Debug.send(this.settings);
-
     this.resize();
 };
 

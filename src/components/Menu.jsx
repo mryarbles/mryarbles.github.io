@@ -20,9 +20,12 @@ class Menu extends React.Component {
 
 		return (
 				<div className="menu-wrapper">
-
 					<div className="row column">
 						<ul className="simple">
+							<li>
+								<a href="https://www.linkedin.com/in/lukegrannis/" target="_blank" className="linkedin"><img src="static/img/In-2C-21px-TM.png" /> Profile</a>
+							</li>
+							<li><hr /></li>
 							<li>
 								<Link to="/page/assetavenue/11"  data-toggle="mainMenu">
 									<img className="thumbnail" src="static/img/assetavenue/tn.png" />

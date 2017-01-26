@@ -1,5 +1,6 @@
 @import "vars/_module";
 @import "mixins/_module";
+@import "~foundation-sites/scss/foundation";
 
 $font-family: 'Sintony', sans-serif;
 
@@ -49,7 +50,7 @@ ul.simple {
 }
 
 .menu-btn {
-	position: fixed;
+	position: absolute;
 	top: .85rem;
 	right: 1rem;
 	padding: .5em;
@@ -64,27 +65,46 @@ ul.simple {
 }
 
 .page-info {
+	padding: 1rem;
 	background: $color-blue;
-	padding: 100px;
-
 	h1 {
+		font-size: 1.75rem;
 		color: white;
 		font-weight: bold;
-		font-size: 3rem;
-		display: block;
-		width: 100%;
 		text-align:center;
 	}
 
 	p {
+		width: 100%;
 		color: white;
 		display:block;
-		width: 50%;
-		margin-left: auto;
-		margin-right: auto;
 		text-align:center;
 	}
 }
+
+@include breakpoint(large) {
+	.page-info {
+
+		padding: 100px;
+
+		h1 {
+
+			font-size: 3rem;
+			display: block;
+			width: 100%;
+
+		}
+
+		p {
+
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+	}
+}
+
 
 .video-holder {
 	display: block;
@@ -95,10 +115,6 @@ ul.simple {
 	margin-right: auto;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-}
-
-.off-canvas-wrapper {
-	padding-top: 80px;
 }
 
 body.peekaboo-is-open {

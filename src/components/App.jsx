@@ -26,8 +26,8 @@ class App extends React.Component {
 		return (
 				<div>
 					<MainNav></MainNav>
-					<div class="off-canvas-wrapper">
-						<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+					<div className="off-canvas-wrapper">
+						<div className="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 							<div className="off-canvas position-left" id="mainMenu" data-off-canvas>
 								<Menu />
 							</div>
